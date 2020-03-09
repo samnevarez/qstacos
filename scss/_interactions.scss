@@ -1,0 +1,62 @@
+// button styles
+
+.btn-primary {
+  text-decoration: none;
+  padding: .75rem;
+  font-family: $secondary-font;
+  font-size: .75rem;
+  text-decoration: none;
+  transition: all 2s ease 0s;
+  outline: none;
+  border-radius: 0rem;
+  border-color: none;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  border: 0;
+  &:hover {
+    color: $white;
+    background-color: lighten($primary, 15%);
+    box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
+    transform: translateY(-2px);
+    transition-duration: .5s;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $white;
+    background-color: lighten($primary, 15%);
+    box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
+    outline: none;
+    text-decoration: none;
+  }
+  &:active {
+    color: $white;
+    background-color: darken($primary, 15%) !important;
+    box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
+    transform: translateY(1px);
+    transition-duration: .1s;
+    transition-delay: 0s;
+    text-decoration: none;
+  }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active {
+  border-color: none;
+}
+
+.btn-prm-bg {
+  background: $primary; 
+}
+
+.btn-scn-bg {
+  background: $secondary;
+}
+// Link Styles
+
+a {
+  color: $secondary;
+  text-decoration: none;
+  &:hover {
+    color: lighten($secondary, 20%);
+    text-decoration: underline;
+  }
+}
