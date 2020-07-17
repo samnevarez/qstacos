@@ -1,41 +1,31 @@
 // button styles
 
 .btn-primary {
-  text-decoration: none;
-  padding: .75rem;
-  font-family: $secondary-font;
-  font-size: .75rem;
-  text-decoration: none;
-  transition: all 2s ease 0s;
-  outline: none;
-  border-radius: 0rem;
-  border-color: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: .5px;
   text-transform: uppercase;
-  letter-spacing: 0;
-  border: 0;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: .3s;
+  line-height: 1;
+  color: #fff;
+  border: 2px solid #d8af07;
+
   &:hover {
-    color: $white;
-    background-color: lighten($primary, 15%);
-    box-shadow: 0 14px 6px -8px rgba(0, 0, 0, 0.3) !important;
-    transform: translateY(-2px);
-    transition-duration: .5s;
-    text-decoration: none;
+    background: #d8af07;
+    color: #fff;
+    border: 2px solid #d8af07;
   }
+
   &:focus {
-    color: $white;
-    background-color: lighten($primary, 15%);
-    box-shadow: 0 16px 6px -8px rgba(0, 0, 0, 0.3) !important;
-    outline: none;
-    text-decoration: none;
+
   }
+
   &:active {
-    color: $white;
-    background-color: darken($primary, 15%) !important;
-    box-shadow: 0 8px 6px -8px rgba(0, 0, 0, 0.5);
-    transform: translateY(1px);
-    transition-duration: .1s;
-    transition-delay: 0s;
-    text-decoration: none;
+
   }
 }
 
