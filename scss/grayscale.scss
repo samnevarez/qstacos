@@ -1892,3 +1892,30 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+#instafeed-container {
+  margin: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0rem;
+}
+
+#instafeed-container a {
+  display: block;
+}
+
+#instafeed-container img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #instafeed-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+}

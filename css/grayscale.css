@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Grayscale v5.0.8 (https://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2020 Start Bootstrap
+ * Copyright 2013-2021 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
@@ -6856,10 +6856,6 @@ section {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input::-ms-input-placeholder, .book-a-table .php-email-form textarea::-ms-input-placeholder {
-  color: #a49b89;
-}
-
 .book-a-table .php-email-form input::placeholder, .book-a-table .php-email-form textarea::placeholder {
   color: #a49b89;
 }
@@ -7183,10 +7179,6 @@ section {
   color: #a49b89;
 }
 
-.contact .php-email-form input::-ms-input-placeholder, .contact .php-email-form textarea::-ms-input-placeholder {
-  color: #a49b89;
-}
-
 .contact .php-email-form input::placeholder, .contact .php-email-form textarea::placeholder {
   color: #a49b89;
 }
@@ -7393,4 +7385,31 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+#instafeed-container {
+  margin: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0rem;
+}
+
+#instafeed-container a {
+  display: block;
+}
+
+#instafeed-container img {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  #instafeed-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
 }

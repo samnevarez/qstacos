@@ -91,7 +91,6 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -111,6 +110,19 @@
         </div>
       </div>
     </section><!-- End About Section -->
+
+    <!-- START -- instafeed -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Follow us on Instagram</h2>
+          <p>Stay up to date with our feed!</p>
+        </div>
+        <div class="row">
+          <div id="instafeed-container"></div>
+        </div>
+    </section>
+    <!-- END -- instafeed -->
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
@@ -654,7 +666,7 @@
         </form>
 
       </div>
-    </section><!-- End Book A Table Section -->
+    </section> End Book A Table Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <!-- <section id="testimonials" class="testimonials section-bg">
@@ -880,6 +892,9 @@
       </div>
     </section> End Chefs Section -->
 
+<!-- IG FEED -->
+
+
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -935,8 +950,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
           <!-- Form hidden -->
-          <p>Contact Form Coming Soon.</p>
-            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -961,7 +975,7 @@
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form> -->
+            </form>
 
           </div>
 
@@ -1051,7 +1065,17 @@
 
   <!-- Template Main JS File -->
   <script src="js/main.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+    var userFeed = new Instafeed({
+      limit: 8,
+      get: 'user',
+      target: "instafeed-container",
+        resolution: 'high_resolution',
+      accessToken: 'IGQVJYVGgzcWtMQnRQRW1Td2NWMWV3dTktM2xEcTItTkRNZAjNtM0VsYlk5Rkp0Skp4NDhVLWI5Sl9yUUxUV0MtTnk1aFlxbW9wTXY3MHJLZAHlUcFZATY0RxeW1xSWVjUkVMZAnhoZAy1fcVd4T0huelFTbgZDZD'
+    });
+    userFeed.run();
+    </script>
 </body>
 
 </html>
