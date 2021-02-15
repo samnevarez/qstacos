@@ -14,7 +14,6 @@
 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -974,10 +973,10 @@
                     </div>
                       <div class="form-group">
                         <form action="contact.php" method="post">
-                          <input type="text" name="UName" placeholder="User Name" class="form-control mb-2">
+                          <input type="text" name="UName" placeholder="Your Name" class="form-control mb-2">
                           <input type="email" name="Email" placeholder="Email" class="form-control mb-2">
                           <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
-                          <textarea name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
+                          <textarea name="msg" class="form-control mb-2" placeholder="Write a Message"></textarea>
                           <?php 
                           $Msg = "";
                           if(isset($_GET['error']))
@@ -993,8 +992,7 @@
                           }
                       
                           ?>
-                          <button class="btn btn-success" name="btn-send" type="submit"
-                          class="g-recaptcha" 
+                          <button class="btn-primary btn btn-success g-recaptcha" name="btn-send" type="submit"
                           data-sitekey="reCAPTCHA_site_key" 
                           data-callback='onSubmit' 
                           data-action='submit'> Send </button>
@@ -1098,7 +1096,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Q's Tacos</span></strong> 2020. All Rights Reserved
+        &copy; Copyright <strong><span>Q's Tacos</span></strong> 2021. All Rights Reserved
       </div>
       <!-- <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
