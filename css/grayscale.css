@@ -6548,7 +6548,9 @@ section {
 }
 
 .menu .menu-content::after {
-  content: "" "" "";
+  content: ""
+ ""
+ "";
   position: absolute;
   left: 20px;
   right: 0;

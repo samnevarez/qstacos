@@ -1,4 +1,4 @@
-<!-- <?php 
+<?php 
     $Msg = "";
     if(isset($_GET['error']))
     {
@@ -12,7 +12,8 @@
         echo '<div class="alert alert-success">'.$Msg.'</div>';
     }
 
-?> -->
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -953,7 +954,7 @@
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>qstacos@gmail.com</p>
+                <a href="mailto: qstacos@gmail.com"><p>qstacos@gmail.com</p></a>
               </div>
 
               <div class="phone">
@@ -969,7 +970,38 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
           <!-- Form hidden -->
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="form-row">
+                    </div>
+                      <div class="form-group">
+                        <form action="contact.php" method="post">
+                          <input type="text" name="UName" placeholder="User Name" class="form-control mb-2">
+                          <input type="email" name="Email" placeholder="Email" class="form-control mb-2">
+                          <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
+                          <textarea name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
+                          <?php 
+                          $Msg = "";
+                          if(isset($_GET['error']))
+                          {
+                              $Msg = " Please Fill in the Blanks ";
+                              echo '<div class="alert alert-danger">'.$Msg.'</div>';
+                          }
+
+                          if(isset($_GET['success']))
+                          {
+                              $Msg = " Your Message Has Been Sent ";
+                              echo '<div class="alert alert-success">'.$Msg.'</div>';
+                          }
+                      
+                          ?>
+                          <button class="btn btn-success" name="btn-send" type="submit"
+                          class="g-recaptcha" 
+                          data-sitekey="reCAPTCHA_site_key" 
+                          data-callback='onSubmit' 
+                          data-action='submit'> Send </button>
+                        </form>
+                      </div>
+
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -999,7 +1031,7 @@
                 data-callback='onSubmit' 
                 data-action='submit'>Send Message</button>
               </div>
-            </form>
+            </form> -->
 
           </div>
 
