@@ -9,15 +9,15 @@
 
        if(empty($UserName) || empty($Email) || empty($Subject) || empty($Msg))
        {
-           header('location:index.php?error');
+           header('location:index.php?error#form-message-loction');
        }
        else
        {
-           $to = "snevarez89@gmail.com";
+           $to = "qstacos@gmail.com";
 
            if(mail($to,$Subject,$Msg,$Email))
            {
-               header("location:index.php?success");
+               header("location:index.php?success#form-message-loction");
            }
        }
     }

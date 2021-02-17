@@ -1,19 +1,3 @@
-<?php 
-    $Msg = "";
-    if(isset($_GET['error']))
-    {
-        $Msg = " Please Fill in the Blanks ";
-        echo '<div class="alert alert-danger">'.$Msg.'</div>';
-    }
-
-    if(isset($_GET['success']))
-    {
-        $Msg = " Your Message Has Been Sent ";
-        echo '<div class="alert alert-success">'.$Msg.'</div>';
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,7 +51,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html"><img src="img/qs-logo-avatar-circle-emblem.png" alt=""></a></h1>
+      <h1 class="logo mr-auto"><a href="/"><img src="img/qs-logo-avatar-circle-emblem.png" alt=""></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -969,7 +953,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
           <!-- Form hidden -->
-          <div class="form-row">
+          <div id="form-message-loction" class="form-row">
                     </div>
                       <div class="form-group">
                         <form action="contact.php" method="post">

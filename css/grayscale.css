@@ -5615,7 +5615,7 @@ p {
   position: fixed;
   display: none;
   right: 15px;
-  bottom: 15px;
+  bottom: 88px;
   z-index: 995;
 }
 
@@ -6548,9 +6548,7 @@ section {
 }
 
 .menu .menu-content::after {
-  content: ""
- ""
- "";
+  content: "" "" "";
   position: absolute;
   left: 20px;
   right: 0;
@@ -7395,7 +7393,7 @@ section {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 2rem;
-  grid-row-gap: 0rem;
+  grid-row-gap: 1rem;
 }
 
 #instafeed-container a {
